@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/edit_school_name"
+        android:orderInCategory="100"
+        android:title="Set Institution Name"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Log Out"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/sub_cat"
+        android:orderInCategory="100"
+        android:title="Set Subjects Category"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/fee_cat"
+        android:orderInCategory="100"
+        android:title="Set Fee Category"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/exam_cat"
+        android:orderInCategory="100"
+        android:title="Set Exam Category"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/clear"
+        android:orderInCategory="100"
+        android:title="Clear All Data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/db_backUp"
+        android:orderInCategory="100"
+        android:title="Export Database"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/restore_db"
+        android:orderInCategory="100"
+        android:title="Import Database"
+        app:showAsAction="never" />
+
+
+
+</menu>

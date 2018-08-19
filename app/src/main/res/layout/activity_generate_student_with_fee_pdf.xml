@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="com.capsulestudio.schoolmanagement.Activity.GenerateStudentWithFeePDFActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e53935"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Select Class"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#fff" />
+
+
+    <Spinner
+        android:id="@+id/spinner_classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_spinner_background"
+        android:dropDownWidth="wrap_content"
+        android:spinnerMode="dropdown" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e53935"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Select Month"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="#fff" />
+
+
+    <Spinner
+        android:id="@+id/spinner_month_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_spinner_background"
+        android:dropDownWidth="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/mybutton"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Generate PDF"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+
+
+</LinearLayout>

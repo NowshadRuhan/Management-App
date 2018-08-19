@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/fbutton_color_concrete"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1">
+
+
+    <TableRow>
+        <!-- Column 1 -->
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+            android:padding="5dip"
+            android:gravity="center"
+            android:layout_margin="1dip"
+            android:layout_weight="1"
+            android:text="Column 1" />
+
+        <!-- Column 2 -->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+            android:padding="5dip"
+            android:gravity="center"
+            android:layout_margin="1dip"
+            android:layout_weight="1"
+            android:text="Column 2" />
+
+        <!-- Column 3 -->
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+            android:padding="5dip"
+            android:gravity="center"
+            android:layout_margin="1dip"
+            android:layout_weight="1"
+            android:text="Column 3" />
+
+        <!-- Column 4 -->
+        <TextView
+            android:id="@+id/tvFeeType"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:textColor="@color/black"
+            android:padding="5dip"
+            android:gravity="center"
+            android:layout_margin="1dip"
+            android:layout_weight="1"
+            android:text="Column 4" />
+
+    </TableRow>
+
+
+</TableLayout>

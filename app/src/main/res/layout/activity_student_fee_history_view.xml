@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.StudentFeeHistoryViewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="40dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+
+               <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                   android:id="@+id/show_profile_image_single"
+                   android:layout_width="140dp"
+                   android:layout_height="140dp"
+                   android:layout_gravity="center"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="5dp"
+                   android:layout_marginTop="40dp"
+                   android:padding="2dp"
+                   android:src="@drawable/opening"
+                   app:civ_border_color="#FF000000"
+                   app:civ_border_width="1dp" />
+
+               <TextView
+                   android:id="@+id/tvRollNameClassSec"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   android:text="Name Roll"
+                   android:textColor="@color/cardview_light_background"
+                   android:textSize="20sp" />
+
+
+           </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="7dp"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--<include layout="@layout/content_student_fee_history_view" />-->
+
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:id="@+id/nestedScrollView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+        <!--<include layout="@layout/content_student_fee_history_view" />-->
+
+        <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/listFeeHistory"/>-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/nested_scroll_view"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <!-- Column 1 -->
+                    <TextView
+                        android:id="@+id/tbl_txt1"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@color/absent_color"
+                        android:textColor="@color/colortop"
+                        android:padding="5dip"
+                        android:gravity="center"
+                        android:layout_margin="1dip"
+                        android:layout_weight="1"
+                        android:text="Month" />
+
+                    <!-- Column 2 -->
+                    <TextView
+                        android:id="@+id/tbl_txt2"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@color/absent_color"
+                        android:textColor="@color/colortop"
+                        android:padding="5dip"
+                        android:gravity="center"
+                        android:layout_margin="1dip"
+                        android:layout_weight="1"
+                        android:text="Date" />
+
+                    <!-- Column 3 -->
+                    <TextView
+                        android:id="@+id/tbl_txt3"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@color/absent_color"
+                        android:textColor="@color/colortop"
+                        android:padding="5dip"
+                        android:gravity="center"
+                        android:layout_margin="1dip"
+                        android:layout_weight="1"
+                        android:text="Amount" />
+
+                    <TextView
+                        android:id="@+id/tbl_txt4"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:background="@color/absent_color"
+                        android:textColor="@color/colortop"
+                        android:padding="5dip"
+                        android:gravity="center"
+                        android:layout_margin="1dip"
+                        android:layout_weight="1"
+                        android:text="Fee Type" />
+
+
+
+                </TableRow>
+
+            </TableLayout>
+            <ListView
+                android:id="@+id/listFeeHistory"
+                android:layout_width="match_parent"
+                android:dividerHeight="1dp"
+                android:background="#fff"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
